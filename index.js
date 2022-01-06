@@ -8,8 +8,7 @@ const session = require('express-session');
 const opn = require('open');
 const app = express();
 
-const PORT = 3000;
-
+const PORT = process.env.PORT || 3000;
 const refreshTokenStore = {};
 const accessTokenCache = new NodeCache({ deleteOnExpire: true });
 
