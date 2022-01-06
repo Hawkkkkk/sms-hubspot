@@ -1,5 +1,3 @@
-console.log('Hello World');
-
 require('dotenv').config();
 const express = require('express');
 const request = require('request-promise-native');
